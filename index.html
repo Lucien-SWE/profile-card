@@ -23,11 +23,13 @@
 
 <body>
     <main>
-        <img src="/images/penguin-pfp.jpg" alt="penguin profile picture" class="profile-image">
         <section id="hero" class="hero-section">
+            <img src="/images/penguin-pfp.jpg" alt="penguin profile picture" class="profile-image">
             <h1 id="hero-header">Memtoz</h1>
             <h2 id="hero-subtitle">Aspiring Software Engineer</h2>
         </section>
+
+        <div class="divider"></div>
 
         <section id="about">
             <h3>About Me</h3>
@@ -38,44 +40,48 @@
                 my backend expertise. You can follow my progress in real time on my GitHub, linked below.</p>
         </section>
 
+        <div class="divider"></div>
+
         <section id="skills">
             <h3>My Skills</h3>
-            <ul>
+            <ul class="skills-list">
                 <li>Frontend using HTML, CSS &amp; JavaScript.</li>
                 <li>Version control with Git &amp; GitHub.</li>
                 <li>Fast deployment using Netlify.</li>
             </ul>
         </section>
 
-        <nav id="contact" aria-label="Contact and social links">
-            <h3>Contact Me</h3>
-            <ul>
+        <div class="divider"></div>
+
+        <nav id="contact" aria-labelledby="contact-heading">
+            <h3 id="contact-heading">Contact Me</h3>
+            <ul class="contact-list">
                 <li>
-                    <a href="https://github.com/Lucien-SWE">
-                        <i class="fab fa-github"></i>
-                        GitHub
+                    <a href="https://github.com/Lucien-SWE" id="github-link">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span class="link-text">GitHub</span>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/lucien-mentessi-892804256/">
-                        <i class="fab fa-linkedin-in"></i>
-                        LinkedIn
+                    <a href="https://www.linkedin.com/in/lucien-mentessi-892804256/" id="linkedin-link">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        <span class="link-text">LinkedIn</span>
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:lucienmentessi@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                        Email
+                    <a href="mailto:lucienmentessi@gmail.com" id="email-link">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span class="link-text">Email</span>
                     </a>
                 </li>
             </ul>
         </nav>
+        <footer id="footer">
+            <p><small>Created by Memtoz using VSCode <time datetime="2025">2025</time> all rights reserved
+                    &copy;</small>
+            </p>
+        </footer>
     </main>
-
-    <footer id="footer">
-        <p><small>Created by Memtoz using VSCode <time datetime="2025">2025</time> all rights reserved &copy;</small>
-        </p>
-    </footer>
 </body>
 
 </html>
